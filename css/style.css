@@ -21,6 +21,7 @@ nav{
     padding: 10px 0px;
     align-items: center;
     justify-content: space-between;
+    /* align-items: baseline; */
     
 }
 nav ul{
@@ -32,15 +33,24 @@ nav ul li{
 }
 nav ul li a{
     color: black;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
 }
 nav ul li a:hover{
     color: rgb(27, 250, 27);
 }
+.flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    position: relative;
+   padding-bottom: 40px;
+}
 .main{
     margin-left: 8%;
     margin-top: 13%;
+
 }
 .main h1{
     font-size: 25px;
@@ -64,21 +74,40 @@ span{
     border-radius: 10px;
     padding: 10px 18px;
     position: absolute;
-    margin-top: 50px;
+    margin-top: 30px;
+    
 
 }
-.images {
-    height: 70%;
+/* .images {
+    float:right;
+    height: 60%;
     width: 45%;
-    position: absolute;
+     position: absolute; 
     bottom: 0;
-    right: 100px;
-}
+    right: 0px; 
+    border: 1px solid blue;
+    margin-right: 0;
+}*/
 .images img{
-    height: 100%;
-    position:absolute;
-    left: 20%;
     
+    /* float:right;
+    margin-left: 30px;
+    position:relative;
+    bottom:30%;
+    left: 30%;
+    right: 0%; */
+   float: right;
+    
+  
+   
+    
+    
+}
+@media (min-width:1200px) {
+
+    nav ul li a{
+        font-size: 25px;
+    }
 }
   
 
